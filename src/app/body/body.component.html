@@ -14,13 +14,14 @@
             </div>
         </div>
         <!-- Section Title End -->
-        <!-- Best Sell Slider Carousel Start -->
-        <div class="best-sell-slider owl-carousel owl-nav-style">
+        <!-- Best Sell Slider Carousel Start -->  
+         
+        <div class="best-sell-slider owl-carousel owl-nav-style" *ngFor="let it of list_item">
             <!-- Single Item -->
-            <article class="list-product">
+            <article class="list-product" >
                 <div class="img-block">
                     <a href="single-product.html" class="thumbnail">
-                        <img class="first-img" src="assets/images/product-image/organic/product-1.jpg" alt="" />
+                        <img class="first-img" src= "{{it.images}}" alt="" />
                         <img class="second-img" src="assets/images/product-image/organic/product-1.jpg" alt="" />
                     </a>
                     <div class="quick-view">
@@ -34,7 +35,7 @@
                 </ul>
                 <div class="product-decs">
                     <a class="inner-link" href="shop-4-column.html"><span>STUDIO DESIGN</span></a>
-                    <h2><a href="single-product.html" class="product-link">Juicy Couture Juicy Quilted Ter..</a></h2>
+                    <h2><a href="single-product.html" class="product-link">{{it.product_name}}</a></h2>
                     <div class="rating-product">
                         <i class="ion-android-star"></i>
                         <i class="ion-android-star"></i>

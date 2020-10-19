@@ -8,11 +8,10 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { PRODUCTComponent } from './product/product.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
-import { CategoryComponent } from './category/category.component';
-import { BrandComponent } from './brand/brand.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,15 +21,14 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FooterComponent,
     PRODUCTComponent,
     ProductdetailComponent,
-    CategoryComponent,
-    BrandComponent,
     CartComponent,
     LoginComponent,
     CheckoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
